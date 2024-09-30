@@ -34,12 +34,25 @@
     margin: 0 auto;
     justify-content: center;
     margin: 2% 0 0;
+    clear: f;
 }
+
+.row--head::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
 .row--r{
     display: flex;
     justify-content: right;
 }
+
+.row--r::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
 .item{
     width: 15%;
@@ -67,8 +80,4 @@
 .row__item--step{
     width: 50%;
     margin: 0 2% 0;
-}
-
-.row__item--index{
-    height: 90px;
 }
